@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Better Way Passage</title>
+  <meta name="description" content="Better Way Passage empowers healthcare professionals with research, resources, mentorship, and technology tools." />
+  <meta property="og:title" content="Better Way Passage" />
+  <meta property="og:description" content="Empowering clinicians and private practices through research, resources, and technology." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/bwp_wordmark_header.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="img/bwp_wordmark_header.png" alt="Better Way Passage logo" />
+      <span class="brand-text">Better <em>Way</em> Passage</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn donate" href="donate.html">Donate</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero small">
+  <div class="container">
+    <h1>About Us</h1>
+    <p class="lead">Our story, team, and passion for equitable healthcare.</p>
+  </div>
+</section>
+
+<section class="container two-col section-gap">
+  <div>
+    <h2>Our story</h2>
+    <p>Better Way Passage began with a simple belief: when clinicians have access to clear, practical tools—grounded in research—patients receive better, more equitable care. We build those tools and get them into the hands of the people who need them most.</p>
+    <p>We work alongside physicians, therapists, and private practice owners to identify needs, run practitioner surveys, and co-create resources that improve outcomes.</p>
+  </div>
+  <div class="panel tall"></div>
+</section>
+
+<section class="container section-gap">
+  <h2>Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar" aria-hidden="true"></div>
+      <h3>First Last</h3>
+      <p>Executive Director</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar" aria-hidden="true"></div>
+      <h3>First Last</h3>
+      <p>Programs Lead</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar" aria-hidden="true"></div>
+      <h3>First Last</h3>
+      <p>Research Director</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Better Way Passage</h4>
+      <p>Evidence-based tools that help clinicians and private practices thrive.</p>
+      <p class="fine">A 501(c)(3) nonprofit. EIN: 00-0000000 (placeholder)</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="btn small">Donate</a>
+    </nav>
+    <form class="newsletter" action="#" method="post" onsubmit="return subscribeEmail(event)">
+      <label for="newsletter-email">Join our newsletter</label>
+      <div class="row">
+        <input id="newsletter-email" name="email" type="email" placeholder="you@clinic.com" required />
+        <button class="btn small" type="submit">Sign up</button>
+      </div>
+      <p class="fine">We respect your privacy.</p>
+    </form>
+  </div>
+  <div class="container tiny">© <span id="year"></span> Better Way Passage</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

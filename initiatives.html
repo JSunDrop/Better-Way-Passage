@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Better Way Passage</title>
+  <meta name="description" content="Better Way Passage empowers healthcare professionals with research, resources, mentorship, and technology tools." />
+  <meta property="og:title" content="Better Way Passage" />
+  <meta property="og:description" content="Empowering clinicians and private practices through research, resources, and technology." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/bwp_wordmark_header.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="img/bwp_wordmark_header.png" alt="Better Way Passage logo" />
+      <span class="brand-text">Better <em>Way</em> Passage</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn donate" href="donate.html">Donate</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero small">
+  <div class="container">
+    <h1>Initiatives</h1>
+    <p class="lead">Where research becomes real-world impact.</p>
+  </div>
+</section>
+
+<section id="education" class="section-block">
+  <div class="container two-col">
+    <div>
+      <h2>Education</h2>
+      <p>We translate current evidence into short, practical courses and downloadable toolkits. CME-ready modules (coming soon) help teams adopt best practices quickly.</p>
+      <ul class="list">
+        <li>Micro-courses with checklists</li>
+        <li>Clinic workflow templates</li>
+        <li>Equity & accessibility guidance</li>
+      </ul>
+    </div>
+    <div class="panel"></div>
+  </div>
+</section>
+
+<section id="mentorship" class="section-block alt">
+  <div class="container two-col">
+    <div>
+      <h2>Mentorship</h2>
+      <p>Peer cohorts and expert office hours to grow clinical, operational, and leadership capacity.</p>
+      <ul class="list">
+        <li>Monthly small-group cohorts</li>
+        <li>One-on-one mentor matching</li>
+        <li>Practice management clinics</li>
+      </ul>
+    </div>
+    <div class="panel"></div>
+  </div>
+</section>
+
+<section id="certification" class="section-block">
+  <div class="container two-col">
+    <div>
+      <h2>Certification & Training</h2>
+      <p>Evidence-based training pathways with badges and certificates that signal quality and equity commitments.</p>
+      <ul class="list">
+        <li>Competency frameworks</li>
+        <li>Simulation & case-based learning</li>
+        <li>Quality improvement projects</li>
+      </ul>
+    </div>
+    <div class="panel"></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Better Way Passage</h4>
+      <p>Evidence-based tools that help clinicians and private practices thrive.</p>
+      <p class="fine">A 501(c)(3) nonprofit. EIN: 00-0000000 (placeholder)</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="btn small">Donate</a>
+    </nav>
+    <form class="newsletter" action="#" method="post" onsubmit="return subscribeEmail(event)">
+      <label for="newsletter-email">Join our newsletter</label>
+      <div class="row">
+        <input id="newsletter-email" name="email" type="email" placeholder="you@clinic.com" required />
+        <button class="btn small" type="submit">Sign up</button>
+      </div>
+      <p class="fine">We respect your privacy.</p>
+    </form>
+  </div>
+  <div class="container tiny">© <span id="year"></span> Better Way Passage</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

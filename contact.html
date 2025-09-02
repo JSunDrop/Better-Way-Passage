@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Better Way Passage</title>
+  <meta name="description" content="Better Way Passage empowers healthcare professionals with research, resources, mentorship, and technology tools." />
+  <meta property="og:title" content="Better Way Passage" />
+  <meta property="og:description" content="Empowering clinicians and private practices through research, resources, and technology." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/bwp_wordmark_header.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="img/bwp_wordmark_header.png" alt="Better Way Passage logo" />
+      <span class="brand-text">Better <em>Way</em> Passage</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn donate" href="donate.html">Donate</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero small">
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="lead">Questions, partnerships, or press? We’d love to hear from you.</p>
+  </div>
+</section>
+
+<section class="container section-gap two-col">
+  <form class="contact-form" onsubmit="return submitContact(event)">
+    <label for="name">Name</label>
+    <input id="name" name="name" placeholder="Full name" required />
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="you@clinic.com" required />
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic">
+      <option>General inquiry</option>
+      <option>Partnership</option>
+      <option>Media</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+    <button class="btn" type="submit">Send</button>
+    <p class="fine">This simple form uses a mailto: link by default. Replace with Formspree/HubSpot later.</p>
+  </form>
+
+  <aside id="survey" class="survey">
+    <h2>Join our research</h2>
+    <p>We run short surveys to capture practitioner needs and turn them into actionable tools.</p>
+    <div class="survey-box">
+      <p><strong>Embed a Typeform/Qualtrics link here</strong> by setting <code>window.SURVEY_URL</code> in <em>js/main.js</em>.</p>
+      <a class="btn outline" href="#" id="survey-link" target="_blank" rel="noopener">Open Survey</a>
+    </div>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Better Way Passage</h4>
+      <p>Evidence-based tools that help clinicians and private practices thrive.</p>
+      <p class="fine">A 501(c)(3) nonprofit. EIN: 00-0000000 (placeholder)</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="initiatives.html">Initiatives</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="btn small">Donate</a>
+    </nav>
+    <form class="newsletter" action="#" method="post" onsubmit="return subscribeEmail(event)">
+      <label for="newsletter-email">Join our newsletter</label>
+      <div class="row">
+        <input id="newsletter-email" name="email" type="email" placeholder="you@clinic.com" required />
+        <button class="btn small" type="submit">Sign up</button>
+      </div>
+      <p class="fine">We respect your privacy.</p>
+    </form>
+  </div>
+  <div class="container tiny">© <span id="year"></span> Better Way Passage</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
